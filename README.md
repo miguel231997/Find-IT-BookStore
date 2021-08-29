@@ -2,19 +2,47 @@
 
 ## Project Name
 
-The name of your project.
+Find.(IT) Book Store
 
 ## Project Description
 
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
+<b><i>My project will invoke a book store API that returns Computer Science books with relevant prices, authors, book title and many more attributes.<i> <b>
+
 ## API and Data Sample
 
 Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
 
+
+<i>The API I will be using is api.itbook.store<i>
+```json
+{
+"error": "0",
+"total": "303",
+ "page": "1",
+"books": [
+        {
+"title": "CSS Animation 101",
+"subtitle": "Become a CSS animation expert with a few minutes each day",
+"isbn13": "1001590577935",
+"price": "$0.00",
+"image": "https://itbook.store/img/books/1001590577935.png",
+"url": "https://itbook.store/books/1001590577935"
+        }
+]}
+```
+
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+
+![Wireframe](../project-1/assets/iphone1.png) 
+![Wireframe](../project-1/assets/iphone2.png)
+![Wireframe](../project-1/assets/iphone3.png)
+![Wireframe](../project-1/assets/web1.png)
+![Wireframe](../project-1/assets/web2.png)
+![Wireframe](../project-1/assets/web3.png)
 
 ### MVP/PostMVP
 
@@ -23,15 +51,20 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Use IT bookstore API to help users find relevant and useful Computer Scince books 
+- Render books on page with relevant information, such as title and price
+- Render search results as the user types into a search bar
+- As the page is loaded with books, the user can click each individual book to find out more information about it
+- CSS styling and flex box to allow for responsive design
+- Media queries for responsiveness on smaller screen resolutions
 
 #### PostMVP  
 *These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add second API that compares book prices with other sites
+- Use local storage to save user favorite books searched
+- share books with friends with a share button
+- add CSS animations for when user is searching for a book, a loading text appears
 
 ## Project Schedule
 
@@ -41,17 +74,19 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|August 28-29| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|August 30| Project Approval | Incomplete
+|August 31| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|September 1| Pseudocode / actual code | Incomplete
+|September 2| Initial Clickable Model  | Incomplete
+|September 3| MVP | Incomplete
+|September 4| Presentations | Incomplete
 
 ## Priority Matrix
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+
+![Wireframe](../project-1/assets/priority-matrix.png)
 
 ## Timeframes
 
@@ -61,9 +96,21 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Planning workflow | L | 3hrs| 3.5hrs | 3.5hrs |
+| Working w/ HTML | L | 2hrs| 3.5hrs | 3.5hrs |
+|pseudocoding | M | 3 hrs |    |  |
+| CSS styling | L | 2hrs| 2.5hrs | 2.5hrs |
+| JS Code first call | H | 3hrs| 5hrs | 5hrs |
+| JS Code second call | H | 3hrs| 5hrs | 5hrs |
+| API call| H | 3hrs|      |      |
+| retrieving all data| H | 3hrs|      |      |
+| styling w/ API 1st call| H |3 hrs|      | |
+|styling w/ API 2nd call | H | 3hrs | |
+| Responsive design | H | 3hrs |  |    |
+|Responsive for mobile| M | 3hrs | | |
+|Total|     |  34  |    |   |
+
+
 
 ## Code Snippet
 
