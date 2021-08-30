@@ -16,6 +16,7 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
 
 
 <i>The API I will be using is api.itbook.store<i>
+https://api.itbook.store/#api-overview
 ```json
 {
 "error": "0",
