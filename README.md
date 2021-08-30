@@ -37,12 +37,12 @@ Specify the API you are using and include a link. Show us a snippet of JSON retu
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
 
-![Wireframe](../project-1/assets/iphone1.png) 
-![Wireframe](../project-1/assets/iphone2.png)
-![Wireframe](../project-1/assets/iphone3.png)
-![Wireframe](../project-1/assets/web1.png)
-![Wireframe](../project-1/assets/web2.png)
-![Wireframe](../project-1/assets/web3.png)
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330240/iphone1_fsdwom.png) 
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330329/iphone2_gilkk0.png)
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330338/iphone3_gsgua4.png)
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330345/web1_dcb36g.png)
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330352/web2_dkg73l.png)
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330357/web3_rben4p.png)
 
 ### MVP/PostMVP
 
@@ -86,7 +86,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
 
-![Wireframe](../project-1/assets/priority-matrix.png)
+![Wireframe](https://res.cloudinary.com/desk8znsq/image/upload/v1630330455/priority-matrix_tubj40.png)
 
 ## Timeframes
 
