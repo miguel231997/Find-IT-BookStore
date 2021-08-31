@@ -100,3 +100,9 @@ background-size: 40px 60px;
     opacity: .5;
 	
 } 
+
+.form-outline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
