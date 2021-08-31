@@ -7,6 +7,12 @@ let page ="";
 let pageInput = document.querySelector("#form1"); 
 let textInput = document.querySelector("#blank"); //selecting the input box to keep track of what the user is typing
 
+
+
+
+
+
+
 pageInput.addEventListener("input",function(e){
     let page = e.target.value.split(" ").join("+").toLowerCase();
     getBooks(term,page);
@@ -44,15 +50,55 @@ function renderBooks(data){  //function to render books into page
         data.forEach((book) => {   //for loop to cycle through all the results from the axios call
             //let h3 = document.createElement("h3");
             let image = document.createElement("img");  //creating an image element to return images of the data
-            
-            //let p = document.createElement("p")
-
-            //h3.innerHTML = book.title;
+            image.setAttribute("id","myImg")
             image.setAttribute("src",book.image); //gives the src to the image to display the image
-            //p.innerHTML = book.subtitle;
+
+            let p = document.createElement("p")
+            p.setAttribute("id","subtitle")
+            // p.innerHTML = book.subtitle;
+            
+            let h5 = document.createElement("h5");
+            h5.setAttribute("id","title")
+            // h5.innerHTML = book.title;
+            
+
 
             bookList.append(image); //appends the image to the page so that it is visible
-            // bookList.append(h3);
+            // bookList.append(h5);
             // bookList.append(p);
-        })
+
+                let modal = document.getElementById("myModal");
+                //let img = document.getElementById("myImg");
+                let modalImg = document.getElementById("img01");
+                let captionText = document.getElementById("caption");
+                let subtitleText = document.getElementById("subtitle")
+                let price = document.getElementById("price");
+                let link = document.getElementById("link");
+                
+                image.addEventListener("click",function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = book.title;
+                subtitleText.innerHTML = book.subtitle;
+                price.innerHTML = book.price;
+                link.innerHTML = book.link
+                });
+
+                let span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.addEventListener("click",function() { 
+                modal.style.display = "none";
+                });
+
+        
+            })
 }
+
+
+
+
+
+// Get the <span> element that closes the modal
+
+
