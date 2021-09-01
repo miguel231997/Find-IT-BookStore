@@ -184,7 +184,7 @@ padding: 10px;
   }
   
   /* Add Animation */
-  .modal-content, #caption,#price,#link {  
+  .modal-content, #caption,#price,#link,#save-button{  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -276,6 +276,20 @@ padding: 10px;
 
 #miguel{
   color: black;
+}
+
+#save-button{
+  margin: auto;
+    display: block;
+    width: 40px;
+    max-width: 500px;
+    text-align: center;
+
+}
+
+#save-button:hover{
+  cursor: pointer;
+  opacity: .5;
 }
   
   /* 100% Image Width on Smaller Screens */
