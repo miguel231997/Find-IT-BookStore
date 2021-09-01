@@ -140,20 +140,20 @@ background-size: 40px 60px;
   }
   
   /* Caption of Modal Image */
-  #caption,#subtitle,#price{
+  #caption,#price,#link{
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 60%;
+    max-width: 500px;
     text-align: center;
     color: black;
     padding: 5px 0;
     height: 30px;
-    background-color: turquoise;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
   }
   
   /* Add Animation */
-  .modal-content, #caption,#subtitle,#price {  
+  .modal-content, #caption,#price,#link {  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;

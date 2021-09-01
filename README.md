@@ -98,15 +98,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Planning workflow | L | 3hrs| 3.5hrs | 3.5hrs |
-| Working w/ HTML | L | 2hrs| 3.5hrs | 3.5hrs |
-|pseudocoding | M | 3 hrs |    |  |
-| CSS styling | L | 2hrs| 2.5hrs | 2.5hrs |
-| JS Code first call | H | 3hrs| 5hrs | 5hrs |
-| JS Code second call | H | 3hrs| 5hrs | 5hrs |
-| API call| H | 3hrs|      |      |
-| retrieving all data| H | 3hrs|      |      |
-| styling w/ API 1st call| H |3 hrs|      | |
-|styling w/ API 2nd call | H | 3hrs | |
+| Working w/ HTML | L | 2hrs| 1.5hrs | 2hrs |
+|pseudocoding | M | 3 hrs |  1hr  | 1.5hr |
+| CSS styling | L | 2hrs| 3.5hrs | |
+| JS Code first call | H | 3hrs| 2hrs | 3hrs |
+| JS Code second call | H | 3hrs| 1hrs | 1hrs |
+| API call| H | 3hrs|  1hr    |    2hr  |
+| retrieving all data| H | 3hrs|  3hr    |      |
+| styling w/ API 1st call| H |3 hrs|   1hr   | 2hr|
+|styling w/ API 2nd call | H | 3hrs | 2hr |
 | Responsive design | H | 3hrs |  |    |
 |Responsive for mobile| M | 3hrs | | |
 |Total|     |  34  |    |   |

@@ -71,17 +71,17 @@ function renderBooks(data){  //function to render books into page
                 //let img = document.getElementById("myImg");
                 let modalImg = document.getElementById("img01");
                 let captionText = document.getElementById("caption");
-                let subtitleText = document.getElementById("subtitle")
+
                 let price = document.getElementById("price");
                 let link = document.getElementById("link");
+                link.setAttribute("href",book.url);
                 
                 image.addEventListener("click",function(){
                 modal.style.display = "block";
                 modalImg.src = this.src;
                 captionText.innerHTML = book.title;
-                subtitleText.innerHTML = book.subtitle;
                 price.innerHTML = book.price;
-                link.innerHTML = book.link
+                link.innerHTML = book.url
                 });
 
                 let span = document.getElementsByClassName("close")[0];
