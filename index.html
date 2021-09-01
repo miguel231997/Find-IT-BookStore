@@ -10,11 +10,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rampart+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Oswald&family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&display=swap" rel="stylesheet">
     <title>Find-It-BookStore</title>
 </head>
 <body>
-    <div class = "site-background">
-    <h1 class = "site-name"> <span class = "yellow">Find</span><span class = "purple">.</span><span class = "orange">(</span><span class = "it">IT</span><span class = "orange">)</span> <span class = "book-store">Book Store</span></h1>
+    <header>
+        <div class = "site-background">
+            <h1 class = "site-name"> <span class = "yellow">Find</span><span class = "purple">.</span><span     class = "orange">(</span><span class = "it">IT</span><span class = "orange">)</span> <span class = "book-store">Book Store</span></h1>
+                <nav class = menu>
+                    <a  title="Books Categories" id="bcategory">New Releases</a> &emsp;&emsp;
+                        <span class="hidden-xs"><a href="https://api.itbook.store" title="API" target="_blank" id ="api">API</a>  &emsp;&emsp;</span>
+                            <a href="https://feeds.feedburner.com/IT-eBooks" title="RSS Feed" target="_blank" id = "rss">News</a>
+                </nav>
+            </div>
+    </header>
+<div class ="site-title">
+    <h2 class = "welcome-message"> Welcome To Find.(IT) Book Store</h2>
+    <h3 class = "csc-library">A Computer Science Library</h3>
+
 </div>
     <div class = " search-div">
         <div class = "image-container">
@@ -23,45 +36,36 @@
     <div class = "search-container">
         <div class = "search-books">
             <input type="text" id="blank" placeholder="Search Books">
-            <button id="search">Search</button> </div>
+                <button id="search">Search</button> </div>
         </div>
     </div>
-    
-        <!-- <footer class = "end-footer"> 
-            <p>Miguel Galindo Copy Right 2021</p>
-        </footer> -->
 </div>
     <div class = "book-list"> </div>
-<!-- <div class = "searchPage">
-    <nav aria-label="search-pages">
-        <ul class="pagination pagination-sm">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">1</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item"><a class="page-link" href="#">6</a></li>
-          <li class="page-item"><a class="page-link" href="#">7</a></li>
-        </ul>
-    </nav>
-</div> -->
+
 <div id="myModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
     <p id="caption"><p>
     <p id="price"><p>
     <a id="link"><a>
-  </div>
-
-
-  
+</div>
 <div class="form-outline">
     <input class="page-selector" type="search" id="form1" class="form-control" placeholder="page #"
     aria-label="Search" />
-  </div>
-
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                 
+                <a title="Books Categories" id="bcategory">New Releases</a> &emsp;&emsp;
+                <a href="https://feeds.feedburner.com/IT-eBooks" title="RSS Feed" target="_blank">News</a> &emsp;&emsp;
+                <a href="https://api.itbook.store" title="API" target="_blank">API</a> &emsp;&emsp;
+            </div>
+                 <div class="col-md-3 right">Miguel Galindo © 2021</div>
+        </div>   
+    </div>
+</footer>
 
 
 

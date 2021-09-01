@@ -6,6 +6,20 @@
 body{
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
     
+    
+    
+}
+.menu{
+  display: flex;
+  justify-content: flex-end;
+}
+#bcategory,#api,#rss{
+  color: #f1f1f1;
+}
+#bcategory:hover{
+cursor: pointer;
+direction: underline;
+text-decoration: underline;
 }
 .image-container{
 
@@ -46,17 +60,30 @@ background-size: 40px 60px;
 }
 .site-background{
     
-    top: 0;
-    width: 100%;
+top: 0;
+width: 100%;
+background: rgb(2,0,36);
+background: #2a6496;
+padding: 10px;
     
 }
+
 .site-name{
     display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:flex-start;
+  align-items: flex-start;
   font-family: 'Oswald', sans-serif;
     font-size: 50px;
-}
+  }
+
+  .welcome-message,.csc-library{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(44, 62, 149);
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 40px;
+  }
 
 .yellow{
     color: rgb(36, 53, 184);
@@ -187,6 +214,16 @@ background-size: 40px 60px;
     text-decoration: none;
     cursor: pointer;
   }
+
+  footer{
+    
+    
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    background-color: #134b72;
+    color: #fefffe;
+}
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){

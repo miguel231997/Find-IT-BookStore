@@ -1,4 +1,5 @@
 const DOMAIN = 'https://api.itbook.store/1.0/search/'; //main API link
+const alterDOMAIN = 'https://api.itbook.store/1.0/new';
 
 let bookList = document.querySelector(".book-list"); //selects the booklist class where data will appended
 let userSearch = ""; //userSearch input     
@@ -6,9 +7,21 @@ let term = ""; //user search input when the user is typing
 let page ="";
 let pageInput = document.querySelector("#form1"); 
 let textInput = document.querySelector("#blank"); //selecting the input box to keep track of what the user is typing
+let newBooks = document.querySelector("#bcategory");
 
+newBooks.addEventListener("click",function(){
+    getNewBooks();
+})
 
-
+async function getNewBooks(){
+    try{
+        let theNewBooks = await axios.get(`${alterDOMAIN}`);
+        newData = theNewBooks.data.books;
+        renderBooks(newData);
+    }catch(error){  
+        console.log(error);
+    }
+}
 
 
 
