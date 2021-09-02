@@ -17,11 +17,16 @@ body{
   display: flex;
   justify-content: flex-end;
 }
-#bcategory,#api,#rss{
+#bcategory,#api,#rss,#acategory{
   color: #f1f1f1;
 }
 #bcategory:hover{
 cursor: pointer;
+direction: underline;
+text-decoration: underline;
+}
+#acategory:hover{
+  cursor: pointer;
 direction: underline;
 text-decoration: underline;
 }
