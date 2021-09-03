@@ -75,12 +75,12 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 28-29| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 30| Project Approval | Incomplete
-|August 31| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|September 1| Pseudocode / actual code | Incomplete
-|September 2| Initial Clickable Model  | Incomplete
-|September 3| MVP | Incomplete
+|August 28-29| Prompt / Wireframes / Priority Matrix / Timeframes | complete
+|August 30| Project Approval | complete
+|August 31| Core Application Structure (HTML, CSS, etc.) | complete
+|September 1| Pseudocode / actual code | complete
+|September 2| Initial Clickable Model  | complete
+|September 3| MVP | complete
 |September 4| Presentations | Incomplete
 
 ## Priority Matrix
@@ -99,17 +99,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Planning workflow | L | 3hrs| 3.5hrs | 3.5hrs |
 | Working w/ HTML | L | 2hrs| 1.5hrs | 2hrs |
-|pseudocoding | M | 3 hrs |  1hr  | 1.5hr |
-| CSS styling | L | 2hrs| 3.5hrs | |
+|pseudocoding | M | 3 hrs |  1hr  | 2.5hr |
+| CSS styling | L | 2hrs| 3.5hrs |5hrs |
 | JS Code first call | H | 3hrs| 2hrs | 3hrs |
-| JS Code second call | H | 3hrs| 1hrs | 1hrs |
-| API call| H | 3hrs|  1hr    |    2hr  |
-| retrieving all data| H | 3hrs|  3hr    |      |
-| styling w/ API 1st call| H |3 hrs|   1hr   | 2hr|
-|styling w/ API 2nd call | H | 3hrs | 2hr |
-| Responsive design | H | 3hrs |  |    |
-|Responsive for mobile| M | 3hrs | | |
-|Total|     |  34  |    |   |
+| JS Code second call | H | 3hrs| 1hrs | 2hrs |
+| API call| H | 3hrs|  1hr    |    2hrs  |
+| retrieving all data| H | 3hrs|  3hrs    |  3hrs    |
+| styling w/ API 1st call| H |3 hrs|   1hrs   | 2hrs|
+|styling w/ API 2nd call | H | 3hrs | 2hrs | 3hrs
+| Responsive design | H | 3hrs | 1hr |  2hrs  |
+|Responsive for mobile| M | 3hrs | 1hr|2hr |
+|Total|     |  34  |  20  |  32 |
 
 
 
@@ -118,9 +118,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+image.addEventListener("click",function(){ 
+                modal.style.display = "block"; 
+                modalImg.src = this.src; 
+                captionText.innerHTML = book.title; 
+                price.innerHTML = book.price; 
+                link.innerHTML = book.url 
 ```
 
 ## Change Log

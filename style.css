@@ -17,7 +17,7 @@ body{
   display: flex;
   justify-content: flex-end;
 }
-#bcategory,#api,#rss,#acategory{
+#bcategory,#api,#rss,#acategory,#saved-books{
   color: #f1f1f1;
 }
 #bcategory:hover{
@@ -50,7 +50,7 @@ height: 200px;
 
 }
 .search-books{
-width: 25%;
+width: 16%;
 height: 50px; 
   padding: 10px;
   margin: 10px;
@@ -298,8 +298,56 @@ padding: 10px;
 }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 600px){
+    
     .modal-content {
       width: 100%;
     }
+    .search-books{
+      background: none;
+      
+      }
+      .site-name{
+      
+        font-size: 20px;
+      }
+      .welcome-message,.csc-library{
+      
+        font-size: 15px;
+      }
+
+      #caption,#price,#link{
+        
+        width: 60%;
+        font-size: 12px;
+        background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+      }
+      
   }
+  @media only screen and (max-width: 408px){
+    #link{
+      font-size: 7px;
+  }
+  
+
+}
+@media only screen and (max-width: 300px){
+body{
+  background: wheat;
+}
+.site-background{
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 319px) {
+
+  #bcategory,#api,#rss,#acategory,#saved-books,#miguel,.GA{
+
+      font-size: 7px;
+  }
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+}

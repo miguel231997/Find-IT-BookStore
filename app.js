@@ -8,8 +8,10 @@ let page =""; //user page input
 let pageInput = document.querySelector("#form1"); 
 let textInput = document.querySelector("#blank"); //selecting the input box to keep track of what the user is typing
 let newBooks = document.querySelector("#bcategory"); //display new releases on the page
-let newBooks1 = document.querySelector("#acategory");
+let newBooks1 = document.querySelector("#acategory"); //displays new releases on the page
+
 let saveIcon = document.querySelector("#save-button"); //stores value of the save-button
+let favoriteBooks = document.querySelector("#saved-books");
 
 newBooks1.addEventListener("click",function(){
     getNewBooks();
@@ -70,6 +72,8 @@ async function getBooks(term,page){     //main axios function, returns books
     }
 }
 
+faveBooksArray =[];
+let savedBooks;
 
 
 function renderBooks(data){  //function to render books into page
@@ -86,12 +90,23 @@ function renderBooks(data){  //function to render books into page
             let link = document.getElementById("link");
             link.setAttribute("href",book.url);
 
-            image.addEventListener("click",function(){ //clicking on an image brings up the modal
+                image.addEventListener("click",function(){ //clicking on an image brings up the modal
                 modal.style.display = "block"; //displays the modal
                 modalImg.src = this.src; //the modal contains what the current image is
                 captionText.innerHTML = book.title; //ading the title of the current book
                 price.innerHTML = book.price; //adding price
                 link.innerHTML = book.url //adding the link to the book
+
+                saveIcon.addEventListener("click",function(){
+                    // faveBooksArray =[];
+                    faveBooksArray.push(book.image);
+                    localStorage.setItem("faves",JSON.stringify(faveBooksArray));
+                    savedBooks = JSON.parse(localStorage.getItem("faves"));
+                    
+                    //displaySavedBooks(savedBooks);
+                })
+                    
+                
             });
                 let span = document.getElementsByClassName("close")[0];
                 // When the user clicks on <span> (x), close the modal
@@ -103,9 +118,21 @@ function renderBooks(data){  //function to render books into page
         })
 }
 
+favoriteBooks.addEventListener("click",function(){
+    displaySavedBooks(savedBooks);
+})
 
-
-
+function displaySavedBooks(savedBooks){
+    bookList.innerHTML = "";
+    savedBooks.forEach((bookSaved)=>{
+        
+        bookList.innerHTML = "";
+        const faveImg = document.createElement("img");
+        faveImg.textContent = bookSaved;
+        faveImg.setAttribute("src",bookSaved);
+        bookList.appendChild(faveImg);
+    })
+}
 
 // Get the <span> element that closes the modal
 
